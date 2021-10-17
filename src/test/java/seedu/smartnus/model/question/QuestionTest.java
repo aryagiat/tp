@@ -157,4 +157,13 @@ public class QuestionTest {
         assertEquals(1, validMcq.getStatistic().getCorrectCount());
 
     }
+
+    @Test
+    public void test_string() {
+        Question validMcq = new QuestionBuilder().withChoices(
+                new Choice("option 2", true), new Choice("option 1", false),
+                new Choice("option 3", false), new Choice("option 4", false)
+        ).build();
+        assertNotEquals(null, validMcq.getQuestionAndOptions());
+    }
 }
