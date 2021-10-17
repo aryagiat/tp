@@ -1,6 +1,7 @@
 package seedu.smartnus.model.question;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static seedu.smartnus.logic.commands.CommandTestUtil.VALID_TAG_HUSBAND;
@@ -166,5 +167,11 @@ public class UniqueQuestionListTest {
     public void asUnmodifiableObservableList_modifyList_throwsUnsupportedOperationException() {
         assertThrows(UnsupportedOperationException.class, ()
             -> uniqueQuestionList.asUnmodifiableObservableList().remove(0));
+    }
+
+    @Test
+    public void test_not_equals() {
+        assertNotEquals(null, uniqueQuestionList.iterator());
+        assertNotEquals(0, uniqueQuestionList.hashCode());
     }
 }
