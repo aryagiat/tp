@@ -22,6 +22,14 @@ public class TypicalQuiz {
             }
     ).build();
 
+    public static final Quiz ONE_QUESTION_QUIZ = new QuizBuilder(
+            new ArrayList<Question>() {
+                {
+                    add(TypicalQuestions.VALID_QUESTION);
+                }
+            }
+    ).build();
+
     private TypicalQuiz() {} // Prevents instantiation
 
 }

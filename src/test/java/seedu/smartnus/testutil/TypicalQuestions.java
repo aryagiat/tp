@@ -37,6 +37,10 @@ public class TypicalQuestions {
             .build();
     public static final Question GEORGE = new QuestionBuilder().withName("George Best").withImportance("1")
             .build();
+    public static final Question VALID_QUESTION = new QuestionBuilder().withChoices(
+            new Choice("option 2", true), new Choice("option 1", false),
+            new Choice("option 3", false), new Choice("option 4", false)
+            ).build();
 
     // Manually added
     public static final Question HOON = new QuestionBuilder().withName("Hoon Meier").withImportance("2")
