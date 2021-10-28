@@ -229,6 +229,10 @@ Examples:
 - `theme light`: Sets the theme to light
 - `theme dark`: Sets the theme to dark
 
+Note: There should only be 1 `THEME` parameter.
+The feature will not function if you use more than 1 parameters
+e.g. `theme light dark` will not work.
+
 ## <a name="quiz_window_commands"></a>Quiz Window Commands
 
 ### Answering a multiple choice question: `a` `b` `c` `d`
